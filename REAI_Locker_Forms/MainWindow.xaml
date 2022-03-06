@@ -1,0 +1,19 @@
+﻿<Window x:Class="REAI_Locker_Forms.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:REAI_Locker_Forms"
+        mc:Ignorable="d"
+        Title="REAI Locker" Height="450" Width="800" Loaded="Window_Loaded" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <Grid VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Name="infoMessage1">OTP Secret Key는 하단에 있습니다.</TextBlock>
+                <TextBox Name="secretKey"></TextBox>
+                <TextBlock Name="infoMessage2">보관뒤 분실하지 마시길 바랍니다.</TextBlock>
+                <Button Name="SaveButton" Click="SaveButton_Click">저장</Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
